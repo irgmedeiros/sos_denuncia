@@ -11,5 +11,5 @@ class Ocorrencia < ActiveRecord::Base
 	validates_format_of :telefone_contato, :with => /\A[\d]+\z/, :message => " - deve ser um numero", :allow_blank => true
 	validates_length_of :telefone_contato, :is => 10, :message => " - deve ter 10 digitos", :allow_blank => true
 
-	TIPOS_DE_OCORRENCIA = ["Assedio", "Homofobia", "Pedofilia", "Racismo", "Violencia contra mulher", "Outros"]
+	TIPOS_DE_OCORRENCIA = ["Assedio", "Homofobia", "Pedofilia", "Racismo", "Violencia contra mulher", "Xingamento à mãe", "Outros"]
 end
