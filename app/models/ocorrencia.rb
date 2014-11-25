@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class Ocorrencia < ActiveRecord::Base
 	validates_presence_of :tipo_ocorrencia, :message => " - deve ser preenchido"
 	validates_presence_of :descricao, :message => " - deve ser preenchido"
